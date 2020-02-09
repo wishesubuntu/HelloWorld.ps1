@@ -5,4 +5,4 @@ Clear-Host
 Write-Output "Hello World"
 $secPassword = Read-Host -Prompt "What is your password" -AsSecureString
 Write-Output "Password recorded to variable `$secPassword"
-Write-Output "`$secPassword = `"$secPassword`""
+Write-Output ("`$secPassword = `"" + $secPassword +"`"")
